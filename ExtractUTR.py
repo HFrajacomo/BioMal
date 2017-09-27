@@ -139,13 +139,13 @@ if(len(cds)>FileSize):
 		for i in range(0,FileSize-1):
 			cdsaux[dimension_amount].append(cds.pop(0))
 			if(i%10000 == 0):
-				print(i)
+				print("Analyzed " + str(i) + " lines")
 		loops = loops + 1
 		dimension_amount = dimension_amount + 1
 		cdsaux.append([])
 	for i in range(0, len(cds)-1):
 		if(i%10000 == 0):
-			print(i)
+			print("Analyzed " + str(i) + " lines")
 		cdsaux[dimension_amount].append(cds.pop(0))
 
 if(Segmented):
